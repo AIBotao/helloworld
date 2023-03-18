@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest # where to run this job 
     steps: # steps we need to take to run this job  
       - uses: actions/checkout@v3 # checkout branch
-      - uses: actions/setup-node@v2 # to setup a node inside of this ubuntu server
+      - uses: actions/setup-node@v3 # to setup a node inside of this ubuntu server
       - name: Install dependencies # npm run install
         run: npm install
       - name: Build app
